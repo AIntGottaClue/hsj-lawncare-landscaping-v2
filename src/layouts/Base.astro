@@ -1,0 +1,64 @@
+---
+import site from '../data/site.json';
+import { u, img, tel } from '../lib';
+const { title, description = '' } = Astro.props;
+const path = Astro.url.pathname;
+const full = title === site.name ? site.name : `${title} | ${site.name}`;
+const ld = { '@context': 'https://schema.org', '@type': 'LandscapingBusiness', name: site.name, telephone: site.phone, email: site.email, address: site.address };
+const nav = site.menu;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{full}</title>
+  <meta name="description" content={description || site.about.slice(0, 150)} />
+  <link rel="icon" href={img('images/favicon.png')} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href={u('/v2.css')} />
+  <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href={u('/')}><span class="mark">L</span><span>{site.name.replace(' Demo', '')}</span></a>
+    <input type="checkbox" id="nt" class="nt" />
+    <label for="nt" class="burger" aria-label="Menu"><i></i><i></i><i></i></label>
+    <nav>
+      {nav.map((m) => (
+        <div class="ni">
+          <a href={u(m.url)} class={path === u(m.url) ? 'on' : ''}>{m.title}</a>
+          {m.children && <div class="sub">{m.children.map((c) => <a href={u(c.url)}>{c.title}</a>)}</div>}
+        </div>
+      ))}
+      <a class="call" href={tel(site.phone)}>{site.phone}</a>
+    </nav>
+  </header>
+  <main><slot /></main>
+  <footer class="foot">
+    <div class="fwrap">
+      <div class="fbig">
+        <p class="fh">Yard work, handled.</p>
+        <a class="btn" href={u('/contact/')}>Request a quote</a>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>{site.address}</p>
+        <p><a href={tel(site.phone)}>{site.phone}</a></p>
+        <p><a href={'mailto:' + site.email}>{site.email}</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        {site.servicesMenu.map((s) => <p><a href={u(s.url)}>{s.title}</a></p>)}
+      </div>
+      <div>
+        <h4>Company</h4>
+        {nav.filter((m) => !m.children).map((m) => <p><a href={u(m.url)}>{m.title}</a></p>)}
+      </div>
+    </div>
+    <p class="legal">&copy; {new Date().getFullYear()} {site.name.replace(' Demo', '')}. All rights reserved.</p>
+  </footer>
+</body>
+</html>

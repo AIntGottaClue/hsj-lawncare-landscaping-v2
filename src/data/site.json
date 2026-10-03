@@ -1,0 +1,102 @@
+{
+ "name": "Lawn Care and Landscaping Demo",
+ "brandColor": "#c0392b",
+ "tagline": "",
+ "phone": "(012) 214-5678",
+ "email": "info@example.com",
+ "address": "123 Main Street, Your City, ST 00000",
+ "about": "We offer a huge variety of landscaping services All of the items in the Lawn Basic are included Nutsedge Control Preventative Grub and Insect Control Annual Fire Ant Control Fertilizer Treatments from Early Spring through Late Fall Free Service Calls",
+ "heroTitle": "Professional Lawn Care and Landscaping Services",
+ "heroImage": "images/banner3.jpg",
+ "formAction": "#",
+ "customCss": "",
+ "menu": [
+  {
+   "title": "Home",
+   "url": "/"
+  },
+  {
+   "title": "About",
+   "url": "/about/"
+  },
+  {
+   "title": "Services",
+   "url": "/services/",
+   "children": [
+    {
+     "title": "Ponds & Water Features",
+     "url": "/ponds-and-water-features/"
+    },
+    {
+     "title": "Lawn Moving",
+     "url": "/lawn-moving/"
+    },
+    {
+     "title": "Watering",
+     "url": "/watering/"
+    },
+    {
+     "title": "Terrain Modification",
+     "url": "/terrain-modification/"
+    },
+    {
+     "title": "Garden Walls",
+     "url": "/garden-walls/"
+    },
+    {
+     "title": "Pathways & Patios",
+     "url": "/pathways-and-patios/"
+    }
+   ]
+  },
+  {
+   "title": "Gallery",
+   "url": "/gallery/"
+  },
+  {
+   "title": "News",
+   "url": "/blog/"
+  },
+  {
+   "title": "Contact",
+   "url": "/contact/"
+  }
+ ],
+ "servicesMenu": [
+  {
+   "title": "Ponds & Water Features",
+   "url": "/ponds-and-water-features/",
+   "order": 1
+  },
+  {
+   "title": "Lawn Moving",
+   "url": "/lawn-moving/",
+   "order": 2
+  },
+  {
+   "title": "Watering",
+   "url": "/watering/",
+   "order": 3
+  },
+  {
+   "title": "Terrain Modification",
+   "url": "/terrain-modification/",
+   "order": 4
+  },
+  {
+   "title": "Garden Walls",
+   "url": "/garden-walls/",
+   "order": 5
+  },
+  {
+   "title": "Pathways & Patios",
+   "url": "/pathways-and-patios/",
+   "order": 6
+  }
+ ],
+ "blogPage": {
+  "title": "News",
+  "banner": "images/banner4.jpg",
+  "bg_position": "top"
+ }
+}

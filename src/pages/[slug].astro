@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import Head from '../components/Head.astro';
+import Cta from '../components/Cta.astro';
+import ContactForm from '../components/ContactForm.astro';
+import site from '../data/site.json';
+import pages from '../data/pages.json';
+import { u, img, fix, strip } from '../lib';
+export function getStaticPaths() {
+  return pages.filter((p) => p.slug !== 'home').map((p) => ({ params: { slug: p.slug }, props: { page: p } }));
+}
+const { page } = Astro.props;
+const svcSlugs = site.servicesMenu.map((s) => s.url.replace(/\//g, ''));
+const isSvc = svcSlugs.includes(page.slug);
+const about = page.slug === 'about' ? page.sections : [];
+const gal = page.slug === 'gallery' ? page.sections[0].gallery : [];
+const svcList = page.slug === 'services' ? page.sections[0].Services : [];
+const photos = ['g3.jpg','g4.jpg','g5.jpg','g6.jpg','g7.jpg','g8.jpg','g2.jpg','p1.jpg','p2.jpg'];
+const crumb = isSvc ? 'Services' : 'Landscaping';
+const ld = { '@context': 'https://schema.org', '@type': isSvc ? 'Service' : 'WebPage', name: page.title, provider: { '@type': 'LandscapingBusiness', name: site.name } };
+---
+<Base title={page.title}>
+  <Head title={page.title} crumb={crumb} />
+  <script type="application/ld+json" set:html={JSON.stringify(ld)} is:inline />
+  {page.slug === 'contact' ? (
+    <section class="w cgrid"><div class="cinfo"><h2>Talk to a person</h2><p>Call, email, or send the form. We reply the same business day.</p><p><strong>{site.phone}</strong></p><p>{site.email}</p><p>{site.address}</p></div><ContactForm title="Send a message" /></section>
+  ) : page.slug === 'services' ? (
+    <section class="w stack"><ol class="rows">{svcList.map((s, i) => (
+      <li><a href={u(s.url)}><span class="n">{String(i + 1).padStart(2, '0')}</span><span class="t">{s.title}</span><span class="d">{strip(s.content).slice(0, 140)}...</span><span class="ar">&rarr;</span></a></li>
+    ))}</ol></section>
+  ) : page.slug === 'gallery' ? (
+    <section class="w mosaic"><div class="mgrid">{gal.flatMap((g) => g.gallery).filter((v, i, a) => a.indexOf(v) === i).map((g, i) => <img class={'m' + (i % 6)} src={img(g)} alt={'Project photo ' + (i + 1)} loading="lazy" />)}</div></section>
+  ) : page.slug === 'about' ? (
+    <section class="w prose-wrap">
+      <img class="side" src={img('images/img3@2x.jpg')} alt="Our crew at work" />
+      <div class="prose" set:html={fix(about[0].content)} />
+    </section>
+    <section class="band"><div class="w split"><h2>{strip(about[2].title)}</h2><div class="prose" set:html={fix(about[2].content)} /></div></section>
+  ) : (
+    <section class="w prose-wrap">
+      <img class="side" src={img(photos[page.slug.length % photos.length])} alt="" />
+      <div class="prose" set:html={fix(page.content)} />
+    </section>
+  )}
+  <Cta />
+</Base>

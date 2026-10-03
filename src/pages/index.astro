@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+import Cta from '../components/Cta.astro';
+import site from '../data/site.json';
+import pages from '../data/pages.json';
+import posts from '../data/posts.json';
+import { u, img, fix, strip } from '../lib';
+const home = pages.find((p) => p.slug === 'home');
+const about = home.sections.find((s) => s.layout === 'about_section');
+const works = home.sections.find((s) => s.layout === 'gallery_section').gallery;
+const tests = home.sections.find((s) => s.layout === 'testimonial_section').testimonials;
+const svc = pages.find((p) => p.slug === 'services').sections[0].Services;
+const incl = [...about.content.matchAll(/<li>(.*?)<\/li>/g)].map((m) => strip(m[1]));
+---
+<Base title={site.name} description="Lawn care, planting, walls, patios, water features and drainage work for homeowners and small commercial properties.">
+  <section class="hero">
+    <div class="w hgrid">
+      <div class="htext">
+        <h1>{site.heroTitle}</h1>
+        <div class="row"><a class="btn" href={u('/contact/')}>Get a free quote</a><a class="btn ghost" href={u('/services/')}>See services</a></div>
+        <ul class="incl">{incl.slice(1).map((i) => <li>{i}</li>)}</ul>
+      </div>
+      <div class="hmedia">
+        <div class="arch" style={`background-image:url('${img('images/img2@2x.jpg')}')`}></div>
+        <div class="pill"><ContactForm title="Free quote" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="w split">
+      <h2>One crew for the whole yard</h2>
+      <div>
+        <p>Mowing, fertilizing and pest control are covered in a basic lawn plan, and the same crew can build the walls, paths and water features around it. That keeps scheduling simple and the finished work consistent.</p>
+        <p>Every job starts with a free visit and a written plan before any work begins.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="w stack">
+    <h2>What we do</h2>
+    <ol class="rows">
+      {svc.map((s, i) => (
+        <li>
+          <a href={u(s.url)}>
+            <span class="n">{String(i + 1).padStart(2, '0')}</span>
+            <span class="t">{s.title}</span>
+            <span class="d">{strip(s.content).slice(0, 110)}...</span>
+            <span class="ar">&rarr;</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="mosaic w">
+    <h2>Recent work</h2>
+    <div class="mgrid">
+      {works.map((g, i) => <img class={'m' + i} src={img(g)} alt={'Landscaping project ' + (i + 1)} loading="lazy" />)}
+    </div>
+  </section>
+
+  <section class="quotes">
+    <div class="w qgrid">
+      <h2>What clients say</h2>
+      {tests.map((t) => (
+        <figure><blockquote set:html={fix(t.content)} /><figcaption>{t.name}</figcaption></figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="w stack">
+    <h2>From the news page</h2>
+    <div class="news">
+      {posts.map((p) => (
+        <a class="nc" href={u('/blog/' + p.slug + '/')}>
+          <img src={img(p.image)} alt="" loading="lazy" />
+          <h3>{p.title}</h3>
+        </a>
+      ))}
+    </div>
+  </section>
+  <Cta />
+</Base>

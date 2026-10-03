@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Head from '../../components/Head.astro';
+import Cta from '../../components/Cta.astro';
+import posts from '../../data/posts.json';
+import { img, fix } from '../../lib';
+export function getStaticPaths() { return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } })); }
+const { post } = Astro.props;
+---
+<Base title={post.title}>
+  <Head title={post.title} crumb="News" />
+  <section class="w prose-wrap"><img class="side" src={img(post.image)} alt="" /><div class="prose" set:html={fix(post.content)} /></section>
+  <Cta />
+</Base>

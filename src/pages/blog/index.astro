@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Head from '../../components/Head.astro';
+import posts from '../../data/posts.json';
+import { u, img } from '../../lib';
+---
+<Base title="News">
+  <Head title="News" crumb="Landscaping" />
+  <section class="w stack"><div class="news">
+    {posts.map((p) => (
+      <a class="nc" href={u('/blog/' + p.slug + '/')}><img src={img(p.image)} alt="" loading="lazy" /><h3>{p.title}</h3><p>{p.excerpt}</p></a>
+    ))}
+  </div></section>
+</Base>

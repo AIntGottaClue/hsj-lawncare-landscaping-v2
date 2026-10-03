@@ -1,0 +1,388 @@
+[
+ {
+  "slug": "home",
+  "title": "Home",
+  "banner": "",
+  "bg_position": "center",
+  "sections": [
+   {
+    "layout": "about_section",
+    "image": "images/img2@2x.jpg",
+    "image_position": "0",
+    "title": "What We Do",
+    "content": "We offer a huge variety of landscaping services\n<ul>\n \t<li><em> All of the items in the Lawn Basic are included</em></li>\n \t<li><em> Nutsedge Control </em></li>\n \t<li><em> Preventative Grub and Insect Control </em></li>\n \t<li><em> Annual Fire Ant Control </em></li>\n \t<li><em> Fertilizer Treatments from Early Spring through Late Fall </em></li>\n \t<li><em> Free Service Calls </em></li>\n \t<li><em> Core Aeration </em></li>\n</ul>\n\n<hr />\n\n<h3>What Sets Us Apart</h3>\nOur technicians are experts in all areas of landscaping. No matter the size of the job, we’ve got you covered! We will make sure the job is done right, the first time."
+   },
+   {
+    "layout": "get_started_section",
+    "title": "Ready To Get Started?",
+    "content": "<p>Contact us now for your FREE initial consultation so we can<br />explain exactly what we can do for you!</p>",
+    "button": [
+     {
+      "button_text": "Schedule A Service",
+      "button_style": "0",
+      "url": "/contact/"
+     },
+     {
+      "button_text": "CALL: (012) 214-5678",
+      "button_style": "1",
+      "url": "tel:(012) 214-5678"
+     }
+    ],
+    "background": "images/pattern.jpg",
+    "box_section": [
+     {
+      "background_type": "1",
+      "image": "images/banner3.jpg",
+      "title": "Gardening Service",
+      "content": "Lawns can grow fast, especially when there’s been recent rain so you may consider a regular lawn mowing service. Make sure to mow when the grass is dry and at the proper height for your grass type, otherwise you risk stunting your lawn’s growth.\n",
+      "button_type": "0",
+      "button_text": "Read More",
+      "url": "/services/"
+     },
+     {
+      "background_type": "0",
+      "title": "Lawn & Maintenance",
+      "content": "<p>For quality lawn and maintenance, look no further than The Grounds Guys. No matter your needs, our dedicated lawn care specialists will aim to keep your landscape in tip-top shape – all year round! Offering a range of lawn care programs and options, we’ll tailor your service to fit your residential or commercial property.</p>",
+      "button_type": "1",
+      "button_text": "Read More",
+      "url": "#"
+     }
+    ],
+    "additional_title": "Not Only Qualified, But Fully Certified!",
+    "additional_content": "<p>We also know how vital it is to repair these lawns in a timely manner. We will work hard to make sure the job is done right so more costly repairs aren’t lurking on the horizon.</p>",
+    "additional_button_text": "Read More",
+    "additional_url": "/services/",
+    "services": [
+     {
+      "image": "images/icon3.png",
+      "title": "Terrain Modification",
+      "url": "/terrain-modification/"
+     },
+     {
+      "image": "images/icon4.png",
+      "title": "Garden Walls",
+      "url": "/garden-walls/"
+     },
+     {
+      "image": "images/icon5.png",
+      "title": "Pathways & Patios",
+      "url": "/pathways-and-patios"
+     },
+     {
+      "image": "images/icon6.png",
+      "title": "Ponds & Water Features",
+      "url": "/ponds-and-water-features/"
+     },
+     {
+      "image": "images/icon1.png",
+      "title": "Watering",
+      "url": "/watering/"
+     },
+     {
+      "image": "images/icon2.png",
+      "title": "Lawn Mowing",
+      "url": "/lawn-moving/"
+     }
+    ]
+   },
+   {
+    "layout": "gallery_section",
+    "title": "Our Feature Works",
+    "subtitle": "Our Projects",
+    "gallery": [
+     "images/g3.jpg",
+     "images/g4.jpg",
+     "images/g5.jpg",
+     "images/g6.jpg",
+     "images/g7.jpg",
+     "images/g8.jpg"
+    ]
+   },
+   {
+    "layout": "testimonial_section",
+    "title": "Happy Clients",
+    "subtitle": "OUR TESTIMONIALS",
+    "testimonials": [
+     {
+      "name": "Nick P",
+      "image": "images/t1.png",
+      "content": "<p>\"I can't say enough good things about these guys, they run a great crew and do incredible work! They are very versatile in their knowledge and abilities.\"</p>"
+     },
+     {
+      "name": "Tom G",
+      "image": "images/t2.png",
+      "content": "<p>\"This company was recommended by friends and I have to say they have exceeded every expectation I had for the quality of their work, schedule flexibility, follow-through, accountability.\"</p>"
+     }
+    ]
+   }
+  ],
+  "content": ""
+ },
+ {
+  "slug": "about",
+  "title": "About",
+  "banner": "",
+  "bg_position": "center",
+  "sections": [
+   {
+    "layout": "about_section",
+    "image": "images/img3@2x.jpg",
+    "image_position": "1",
+    "title": "ABOUT US",
+    "content": "We are a Team of Professional Landscaping Experts in serving the Landscaping Industry for 10 years throughout all Counties. We feel No job is too large or too small.\n\n10 Years of Quality Landscaping Experience in doing the following jobs:\n<ul>\n \t<li><strong>Landscape Installation and Maintenance Services</strong></li>\n \t<li><strong>Lawn Renovation and Maintenance Services</strong></li>\n \t<li><strong>Snow Plowing and Removal</strong></li>\n \t<li><strong>Home Improvement services</strong></li>\n</ul>\nWe want you to be totally thrilled with our service… so absolutely delighted you will recommend us to your friends and neighbours. Frankly, we want to care for your lawn forever. You are the judge, if our work is not excellent, we will re-do the item in question for FREE.\n\nNothing is more important to us than your complete satisfaction, we will always treat you the same way we like to be treated."
+   },
+   {
+    "layout": "counter_section",
+    "background": "images/pattern.jpg",
+    "counter": [
+     {
+      "icon": "fa-trophy",
+      "title": "100s of",
+      "subtitle": "Finished Projects"
+     },
+     {
+      "icon": "fa-thumbs-up",
+      "title": "100s of",
+      "subtitle": "Happy Clients"
+     },
+     {
+      "icon": "fa-certificate",
+      "title": "10+",
+      "subtitle": "Years Experience"
+     },
+     {
+      "icon": "fa-home",
+      "title": "100s of",
+      "subtitle": "Lawns Landscaped"
+     }
+    ],
+    "title": "",
+    "subtitle": ""
+   },
+   {
+    "layout": "default_section",
+    "background_color": "#f7f7f7",
+    "title": "Why Choose Us ",
+    "subtitle": "Popular Questions",
+    "content": "Our Landscaping Company is one of the most experienced and respected building &amp; construction firms for over a decade. We have been transforming the ideas and visions of our clients into award-winning projects.\n<ul>\n \t<li>Financial Responsibility to Our Clients</li>\n \t<li>Superior Quality</li>\n \t<li>Quality and Value to the Projects We Deliver</li>\n \t<li>Highest Standards</li>\n \t<li>On Time and on Budget</li>\n \t<li>Real Focus on Customer Satisfaction</li>\n</ul>"
+   },
+   {
+    "layout": "testimonial_section",
+    "title": "Happy Clients",
+    "subtitle": "OUR TESTIMONIALS",
+    "testimonials": [
+     {
+      "name": "Tom G",
+      "image": "images/t2.png",
+      "content": "<p>\"This company was recommended by friends and I have to say they have exceeded every expectation I had for the quality of their work, schedule flexibility, follow-through, accountability.\"</p>"
+     },
+     {
+      "name": "Nick P",
+      "image": "images/t1.png",
+      "content": "<p>\"I can't say enough good things about these guys, they run a great crew and do incredible work! They are very versatile in their knowledge and abilities.\"</p>"
+     }
+    ]
+   }
+  ],
+  "content": ""
+ },
+ {
+  "slug": "services",
+  "title": "Services",
+  "banner": "",
+  "bg_position": "center",
+  "sections": [
+   {
+    "layout": "services_section",
+    "title": "Expert & Professional",
+    "subtitle": "",
+    "Services": [
+     {
+      "image": "images/services3.png",
+      "title": "Ponds & Water Features",
+      "content": "<p>One of the first things our contractors will do when you call on us is to perform a thorough inspection of your home  and the surroundings.</p>",
+      "url": "/ponds-and-water-features/"
+     },
+     {
+      "image": "images/services4.png",
+      "title": "Lawn Mowing",
+      "content": "<p>Organic materials have become a very popular mainstay in landscaping materials. More and more people are choosing them.</p>",
+      "url": "/lawn-moving/"
+     },
+     {
+      "image": "images/services1.png",
+      "title": "Watering",
+      "content": "<p>The two most critical parts of any home are the lawn and the structure itself. Your home’s structure is.</p>",
+      "url": "/watering/"
+     },
+     {
+      "image": "images/services2.png",
+      "title": "Pathways & Patios",
+      "content": "<p>If you own business or commercial properties, you already know how important it is to protect your investment.</p>",
+      "url": "/pathways-and-patios"
+     },
+     {
+      "image": "images/services3.png",
+      "title": "Terrain Modification",
+      "content": "<p>Our landscaping contractors are not only qualified, but fully certified. Our first priority is to provide top-notch service at.</p>",
+      "url": "/terrain-modification/"
+     },
+     {
+      "image": "images/services4.png",
+      "title": "Garden Walls",
+      "content": "<p>There is a major difference between fixing a lawn that is and one that is well-designed.</p>",
+      "url": "/garden-walls/"
+     }
+    ]
+   },
+   {
+    "layout": "three_column_section",
+    "title": "WE ARE THE EXPERT ON THIS FIELD, BETTER BUILDING SOLUTIONS.",
+    "subtitle": "Committing to the whole renovation thing. Here, you can easily find best professionals in your area.",
+    "column": [
+     {
+      "icon": "fa-bullseye",
+      "title": "Creative Pre Plannings",
+      "subtitle": ""
+     },
+     {
+      "icon": "fa-users",
+      "title": "Team With Hardwork",
+      "subtitle": ""
+     },
+     {
+      "icon": "fa-trophy",
+      "title": "We Deliver Quality",
+      "subtitle": ""
+     }
+    ]
+   },
+   {
+    "layout": "widget_section",
+    "background": "images/pattern.jpg",
+    "title": "Our Company",
+    "subtitle": "Good buildings come from good people, and all problems are solved by good design",
+    "widget": [
+     {
+      "icon": "fa-building-o",
+      "title": "COMPANY LAWNS",
+      "subtitle": ""
+     },
+     {
+      "icon": "fa-home",
+      "title": "RURAL BUILDINGS",
+      "subtitle": ""
+     },
+     {
+      "icon": "fa-shopping-basket",
+      "title": "SHOPPING MALLS",
+      "subtitle": ""
+     }
+    ]
+   },
+   {
+    "layout": "gallery_section",
+    "title": "Our Feature Works",
+    "subtitle": "Our Projects",
+    "gallery": []
+   }
+  ],
+  "content": ""
+ },
+ {
+  "slug": "gallery",
+  "title": "Gallery",
+  "banner": "images/banner.jpg",
+  "bg_position": "center",
+  "sections": [
+   {
+    "layout": "masonry_gallery",
+    "title": "",
+    "subtitle": "",
+    "gallery": [
+     {
+      "title": "Gallery 1",
+      "gallery": [
+       "images/g3.jpg",
+       "images/gal1.jpg",
+       "images/gal2.jpg"
+      ]
+     },
+     {
+      "title": "Gallery 2",
+      "gallery": [
+       "images/gal1.jpg",
+       "images/gal2.jpg",
+       "images/g4.jpg",
+       "images/g3.jpg"
+      ]
+     },
+     {
+      "title": "Gallery 3",
+      "gallery": [
+       "images/g4.jpg",
+       "images/gal3.jpg"
+      ]
+     }
+    ]
+   }
+  ],
+  "content": ""
+ },
+ {
+  "slug": "contact",
+  "title": "Contact",
+  "banner": "images/banner4.jpg",
+  "bg_position": "center",
+  "sections": [],
+  "content": ""
+ },
+ {
+  "slug": "pathways-and-patios",
+  "title": "Pathways & Patios",
+  "banner": "",
+  "bg_position": "top",
+  "sections": [],
+  "content": "We are specializing in pathways, patios, and garden walls such as:\n<ul>\n \t<li>turfing</li>\n \t<li>driveways</li>\n \t<li>pathways</li>\n \t<li>block paving</li>\n \t<li>gravel</li>\n</ul>\nWhen planning your walkway, start by thinking about the traffic it will need to accommodate. If you have a lot of people coming and going, you’ll need a wider path. If you have small children, you might want to consider a sturdier surface like concrete or brick to prevent them from slipping.\n\nOnce you’ve decided on the width and surface of your walkway, it’s time to start dreaming about shape. One of the simplest and most popular shapes is a straight path from one point to another. But if you want to add some interest, try winding your path around plants or other features in your yard.\n\nNo matter what shape or surface you choose, make sure to take into account the grade of your yard. If you have a steep slope, you might want to use steps or a ramp to make it easier to get around.\n\nWhen it comes to landscaping for patios and walkways, the possibilities are endless.\n\n&nbsp;"
+ },
+ {
+  "slug": "garden-walls",
+  "title": "Garden Walls",
+  "banner": "",
+  "bg_position": "top",
+  "sections": [],
+  "content": "<p>What garden walls are for? Garden boundaries, such as aluminium gates, are a great solution for adding a little more shade or privacy from neighbouring properties. They can also act as a deterrent for burglars. Walls can come in a variety of materials, including brick, concrete and timber. Garden walls are often used to create different levels in the garden and can be used as seating areas or places to grow plants.</p>\n<p>When choosing a garden wall, it’s important to consider the height, weight and material. Walls that are too high or too heavy may not be practical, and could damage your property in the event of a storm. It’s also important to choose a wall that will complement the style of your home.</p>\n<p>If you’re thinking of adding a garden wall, get in touch with our team.</p>"
+ },
+ {
+  "slug": "terrain-modification",
+  "title": "Terrain Modification",
+  "banner": "",
+  "bg_position": "top",
+  "sections": [],
+  "content": "<p>Ground surfaces are accurately represented by our company's terrain model, which incorporates important features that control water movement such as bottom materials and levees. This means you can more easily map out areas susceptible to flooding or calculate how much rain would be needed for a certain task if it was located in an affected zone!</p>\n<p>A good representation of your river channel needs little improve-mentation; however we offer tools so users don't need technical skills like 3D modeling knowledge (though they do have benefits!)</p>\n<p>The terrain model can also help identify drainage issues before they become a problem. For example, if you are planning to build a new structure in an area that is known to flood, our model can help you determine the safest location for your building. In addition, our model can be used to plan and design drainage systems that will keep your property.</p>"
+ },
+ {
+  "slug": "watering",
+  "title": "Watering",
+  "banner": "",
+  "bg_position": "top",
+  "sections": [],
+  "content": "<h2 class=\"entry-title\">Lawn Watering Tips</h2>\nYour lawn is a living thing that needs water to survive. The summer heat usually means more processing of the already limited rainfall, but with less natural moisture available you should consider giving your grass some help by using an extra sprinkler or two when necessary!\nA healthy environment for growing turf starts with good irrigation practices, and there's no better way than dragging out those hoses from time-to-time so they stay full enough all year round.\n<h2>What Happens To The Water You Put On The Lawn?</h2>\nThe blades of grass are covered with tiny pores called stomata. The plants absorb water mixed in nutrients and minerals through the roots, which is then used for photosynthesis; this process creates food that sustains them throughout their life cycle - even after death when it becomes part of other plantlife again! In order to do so though requires more than just rainfall: excess moisture (or \"waste material\") released during transpirations replaces oxygen from air around us while also releasing its own vapor into our atmosphere as well .\n<h2> Rules for watering:</h2>\n<ul>\n \t<li>Maintain good soil moisture levels</li>\n \t<li>Water less often, but thoroughly</li>\n \t<li>Water late in the evening or early in the morning</li>\n \t<li>Ensure the water reaches the roots</li>\n \t<li>Water evenly around the plant for a balanced well-developed root system</li>\n \t<li>Apply gradually to allow water to fully penetrate the soil without run-off</li>\n \t<li>Use water-saving irrigation methods e.g. drip irrigation</li>\n \t<li>Use quality, clay-rich soil for better water retention</li>\n</ul>\n&nbsp;"
+ },
+ {
+  "slug": "lawn-moving",
+  "title": "Lawn Moving",
+  "banner": "",
+  "bg_position": "top",
+  "sections": [],
+  "content": "<p>We know how important it is to keep your commercial lawn looking its best. That's why we offer regular maintenance services that will ensure you have a healthy, green space for years into the future!</p>\n<p>Maintaining an attractive exterior means more than just taking care of litter boxes and picking up trash - A cleanly maintained landscape can be used as marketing collateral which attracts new customers who want what everyone else has; smooth-sailing business operations inside with plenty room left over on their budget spreadsheet (or pocketbook).</p>\n<p><strong>Our lawn care services include, but are not limited to:</strong></p>\n<p><strong>Spring cleaning </strong>,  What's that? You want us to clear away dead leaves and debris so nothing gets in the way of your lawn being healthy during this cold season? Well, we're happy as punch (or perhaps not-so) because it sounds like something right up our alley! We specialize specifically with spring cleaning - prep yours now while there are still plenty left on trees around town.</p>\n<p><strong>Fall cleaning </strong>,  The fall is a great time to clean up the yard. You can get your grass and leaves picked out, as well as dead branches or tree stumps taken care of with our regular service appointments!</p>\n<p><strong>Mowing </strong>,  Mowing is one of the most important parts about maintaining a healthy and well-maintained property. With our precision grass mowers, you can have pristine lawn all year round as your business's reflection!</p>\n<p><strong>Lawn care </strong>,  Regular treatments such as fertilization, aeration, top dressing, and dethatching make sure that your expensive lawn stays green and lush.</p>"
+ },
+ {
+  "slug": "ponds-and-water-features",
+  "title": "Ponds & Water Features",
+  "banner": "",
+  "bg_position": "top",
+  "sections": [],
+  "content": "<p>The garden pond is a versatile design that can be used in any size and style. They offer the opportunity for wildlife, minimalist or contemplative pools with linear boundaries depending on your preference- plus it's easy to add bubbling sound from an overflowing fountain!</p>\n<p>The best way to make your garden more beautiful is by adding water. There’s a wide range of aquatic plants that will thrive in ponds, whether they are fully submerged or floating on top and growing near the edge as marginal space Allows for creativity with design because you can create various shapes such-as round pools which looks gorgeous when Lot arrayed together at one spot!</p>\n<p>If you have a garden pond, no matter how small or large it is then there's always room for aquatic plants. Not only will these floating beauties look attractive in your yard but they can provide useful surface cover and shelter from wildlife as well! In addition to being aesthetically pleasing oxygenating plant species also help keep water clear so that all types of animals feel comfortable around them.</p>"
+ }
+]

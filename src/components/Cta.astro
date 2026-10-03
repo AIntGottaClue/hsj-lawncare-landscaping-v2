@@ -1,0 +1,9 @@
+---
+import site from '../data/site.json';
+import { u, tel } from '../lib';
+---
+<section class="cta">
+  <h2>Tell us about your yard.</h2>
+  <p>A free first visit covers the lawn, beds and hardscape, then you get a plain written plan.</p>
+  <div class="row"><a class="btn" href={u('/contact/')}>Schedule a service</a><a class="btn ghost" href={tel(site.phone)}>Call {site.phone}</a></div>
+</section>
